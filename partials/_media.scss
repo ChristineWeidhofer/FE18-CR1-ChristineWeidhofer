@@ -12,6 +12,12 @@
   #nav-bottom a {
     font-size: 1.2rem;
   }
+  .recipe-heading, .about-heading, .faq-heading {
+    font-size: 4rem;
+  }
+  .bg-wrapper {
+    width: 67%;
+  }
 }  
 
 @media screen and (max-width: 500px) {
@@ -19,10 +25,16 @@
     @include changeCols(1,1fr);
     width: 90%;
   }
-  p {
+  .caption {
     font-size: 1.6rem;
   }
   #nav-bottom a {
     font-size: 1.1rem;
+  }
+  .recipe-heading, .about-heading, .faq-heading {
+    font-size: 4rem;
+  }
+  .bg-wrapper {
+    width: 80%;
   }
 }

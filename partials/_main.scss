@@ -1,4 +1,4 @@
-h1 {
+h1, h3 {
   font-family: $fontHeading;
   text-align: center;
 }
@@ -10,6 +10,10 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 4rem;
+}
+
 span.heading {
   font-family: $fontHeading;
   font-size: 1.4rem;
@@ -18,10 +22,6 @@ span.heading {
 .wrapper {
   margin: 4rem auto;
   max-width: 1400px;
-}
-
-.sub-page-wrapper {
-  height: 40vh;
 }
 
 #image-wrapper {
@@ -116,5 +116,13 @@ li {
   background-color: $colorRed;
   width: 50%;
   padding: 2rem;
+  border-radius: 6px;
+}
+
+.recipe-text {
+  width: 80%;
+  padding: 2rem;
+  margin: 4rem auto;
+  box-shadow: 0 0 1rem rgb(210, 208, 208);
   border-radius: 6px;
 }

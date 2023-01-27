@@ -20,7 +20,7 @@ nav, #nav-top, #nav-bottom {
 }
 nav a, #nav-top a, #nav-bottom a {
   text-decoration: none;
-  color: #A62B1F;
+  color: #a84e44;
   font-size: 1.3rem;
   transition: all 0.5s ease;
 }
@@ -129,7 +129,7 @@ img {
   padding: 10vh;
   color: rgb(237, 237, 237);
   font-size: 5em;
-  background-color: #A62B1F;
+  background-color: #a84e44;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
   background-image: url("../assets/taco.jpg");
   background-repeat: no-repeat;
@@ -164,7 +164,7 @@ li {
 .bg-wrapper {
   color: white;
   font-weight: bold;
-  background-color: #A62B1F;
+  background-color: #a84e44;
   width: 50%;
   padding: 2rem;
   border-radius: 6px;

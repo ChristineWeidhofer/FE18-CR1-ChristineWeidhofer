@@ -1,27 +1,28 @@
-@media screen and (min-width: 901px) and (max-width: 1300px) {
-  body {
-    
-    div {
-      @include changeCols(3,1fr);
-    }
-  }  
+@media screen and (min-width: 901px){
+  #image-wrapper {
+    @include changeCols(3,1fr);
+  } 
 }
 
 @media screen and (min-width: 501px) and (max-width: 900px) {
-  body {
-
-    div {
-      @include changeCols(2,1fr);
-    }
-  }  
-}
+  #image-wrapper {
+    @include changeCols(2,1fr);
+    width: 85%;
+  }
+  #nav-bottom a {
+    font-size: 1.2rem;
+  }
+}  
 
 @media screen and (max-width: 500px) {
-  body {
-  
-    div {
-      @include changeCols(1,1fr);
-      margin: 0;
-    }
-  }  
+  #image-wrapper {
+    @include changeCols(1,1fr);
+    width: 90%;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  #nav-bottom a {
+    font-size: 1.1rem;
+  }
 }

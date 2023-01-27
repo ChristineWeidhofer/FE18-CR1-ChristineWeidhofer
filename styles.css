@@ -7,7 +7,9 @@
 
 body {
   width: 100%;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  color: rgb(23, 22, 22);
 }
 
 nav, #nav-top, #nav-bottom {
@@ -18,14 +20,15 @@ nav, #nav-top, #nav-bottom {
 }
 nav a, #nav-top a, #nav-bottom a {
   text-decoration: none;
-  color: black;
-  font-size: 1.4rem;
+  color: #A62B1F;
+  font-size: 1.3rem;
   transition: all 0.5s ease;
 }
 nav a:hover, #nav-top a:hover, #nav-bottom a:hover {
-  color: red;
+  color: black;
   transform: scale(1.2);
-  font-weight: bold;
+  transform-origin: center center;
+  font-weight: semi-bold;
 }
 
 #nav-top, #nav-bottom {
@@ -45,38 +48,133 @@ nav a:hover, #nav-top a:hover, #nav-bottom a:hover {
 }
 #logo:hover {
   transform: scale(1.4);
+  transform-origin: center center;
 }
 
-div {
+.fa-search {
+  padding: 1rem;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.sub-page-wrapper {
+  height: 60vh;
+}
+
+#image-wrapper {
   width: 80%;
   max-width: 1400px;
-  margin: 1.5rem auto;
+  margin: 4rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
-div img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+#image-wrapper section {
+  position: relative;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+#image-wrapper section:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 1rem rgb(140, 139, 139);
 }
 
-@media screen and (min-width: 901px) and (max-width: 1300px) {
-  body div {
+img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+p {
+  z-index: 100;
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  /* gradients */
+  background: rgb(238, 238, 238); /* Old browsers */ /* FF3.6+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+  background: linear-gradient(180deg, rgba(238, 238, 238, 0.4) 0%, rgb(238, 238, 238) 100%); /* W3C */
+  font-size: 1.4rem;
+  font-weight: bold;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+footer {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-weight: semi-bold;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  opacity: 0.7;
+}
+
+#footer-row1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer-row1 a {
+  padding: 1rem 0;
+}
+
+#footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-social a {
+  padding: 1rem;
+}
+
+#footer-copyright {
+  text-align: center;
+}
+#footer-copyright a {
+  padding: 1rem;
+}
+
+.fa {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 901px) {
+  #image-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 501px) and (max-width: 900px) {
-  body div {
+  #image-wrapper {
     grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+  }
+  #nav-bottom a {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 500px) {
-  body div {
+  #image-wrapper {
     grid-template-columns: repeat(1, 1fr);
-    margin: 0;
+    width: 90%;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  #nav-bottom a {
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -85,7 +85,7 @@ span.heading {
   width: 80%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 #image-wrapper section {
@@ -221,33 +221,11 @@ footer a:hover {
   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 901px) {
-  #image-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (min-width: 501px) and (max-width: 900px) {
+/* tablets landscape and up are already included in the default 3-col-grid, I would give 4 cols to larger screens for a "real project" */
+@media screen and (min-width: 577px) and (max-width: 768px) {
   #image-wrapper {
     grid-template-columns: repeat(2, 1fr);
     width: 85%;
-  }
-  #nav-bottom a {
-    font-size: 1.2rem;
-  }
-  .recipe-heading, .about-heading, .faq-heading {
-    font-size: 4rem;
-  }
-  .bg-wrapper {
-    width: 67%;
-  }
-}
-@media screen and (max-width: 500px) {
-  #image-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-    width: 90%;
-  }
-  .caption {
-    font-size: 1.6rem;
   }
   #nav-bottom a {
     font-size: 1.1rem;
@@ -256,6 +234,27 @@ footer a:hover {
     font-size: 4rem;
   }
   .bg-wrapper {
+    width: 67%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #image-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+  .caption {
+    font-size: 1.6rem;
+  }
+  #nav-bottom a {
+    font-size: 1rem;
+  }
+  .recipe-heading, .about-heading, .faq-heading {
+    font-size: 4rem;
+  }
+  .bg-wrapper {
     width: 80%;
+  }
+  #nav-top a:nth-child(2) {
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=styles.css.map */

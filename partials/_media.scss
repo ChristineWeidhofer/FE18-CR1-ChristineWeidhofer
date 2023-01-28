@@ -1,16 +1,14 @@
-@media screen and (min-width: 901px){
-  #image-wrapper {
-    @include changeCols(3,1fr);
-  } 
-}
+/* tablets landscape and up are already included in the default 3-col-grid, I would give 4 cols to larger screens for a "real project" */
 
-@media screen and (min-width: 501px) and (max-width: 900px) {
+// tablets portrait
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
   #image-wrapper {
     @include changeCols(2,1fr);
     width: 85%;
   }
   #nav-bottom a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .recipe-heading, .about-heading, .faq-heading {
     font-size: 4rem;
@@ -20,7 +18,9 @@
   }
 }  
 
-@media screen and (max-width: 500px) {
+// small screens
+
+@media screen and (max-width: 576px) {
   #image-wrapper {
     @include changeCols(1,1fr);
     width: 90%;
@@ -29,12 +29,15 @@
     font-size: 1.6rem;
   }
   #nav-bottom a {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .recipe-heading, .about-heading, .faq-heading {
     font-size: 4rem;
   }
   .bg-wrapper {
     width: 80%;
+  }
+  #nav-top a:nth-child(2) {
+    font-size: 0.9rem;
   }
 }
